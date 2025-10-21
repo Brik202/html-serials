@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Данные и формы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<header>
+  <h1 align="center">Табличные данные и формы обработки</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html" title="Главная">Главная</a></li>
+      <!-- <li><a href="detail.html" title="Детальная страница">Детальная страница</a></li> -->
+      <li><a href="data.html" title="Данные и формы">Таблица и формы</a></li>
+    </ul>
+  </nav>
+</header>
+
+<fieldset>
+  <legend>График</legend>
+  <h3>Значение по оси OX</h3>
+  <ul type="none">
+      <li><input type="radio" name="X" value="type">Жанр</li>
+      <li><input type="radio" name="X" value="country">Статус</li>
+      <li><input type="radio" name="X" value="date">Рейтинг</li>
+  </ul>
+  <h3>Значение по оси OY</h3>
+  <ul type="none">
+      <li><input type="checkbox" name="height">Страна</li>
+      <li><input type="checkbox" name="height">Сезонов</li>
+      <li><input type="checkbox" name="height">Серий</li>
+  </ul>
+  <input type="submit" value="Построить">
+</fieldset>
+<fieldset>
+  <legend>Сортировка для поиска</legend>
+  <label>Первый уровень:
+              <select id="filter">
+  <option value="all">Жанр</option>
+  <option value="fantasy">Страна</option>
+  <option value="figthting">Статус</option>
+  <option value="thriller">Рейтинг</option>
+  <option value="comedy">Название</option>
+  </select>
+  по убыванию? <input type="checkbox">
+  </label> <br/>
+  <label>Второй уровень:
+  <select id="Country">
+  <option value="all">Жанр</option>
+  <option value="fantasy">Страна</option>
+  <option value="figthting">Статус</option>
+  <option value="thriller">Рейтинг</option>
+  <option value="comedy">Название</option>
+  </select>
+  по убыванию? <input type="checkbox">
+  </label> <br/>
+  <label>Третий уровень:
+              <select id="Rate">
+                <option value="all">Жанр</option>
+                <option value="fantasy">Страна</option>
+                <option value="figthting">Статус</option>
+                <option value="thriller">Рейтинг</option>
+                <option value="comedy">Название</option>
+  </select>
+  по убыванию? <input type="checkbox">
+  </label> <br/>
+
+  <label>Четвертый уровень:
+              <select id="activityFilter">
+                <option value="all">Жанр</option>
+                <option value="fantasy">Страна</option>
+                <option value="figthting">Статус</option>
+                <option value="thriller">Рейтинг</option>
+                <option value="comedy">Название</option>
+  </select>
+  по убыванию? <input type="checkbox">
+</label><br>
+
+  
+  <input type="button" value="Сортировать"/>
+  </fieldset>
+
+  <fieldset>
+    <legend>Фильтр: </legend>
+    <br>Название: <input type="search"></br>
+    <br>Страна: <input type="search"></br>
+    <br> Жанр: <input type="search"></br>
+    <br> Статус: <input type="search"></br>
+  </fieldset>
+
+    <h2>Таблица сериалов</h2>
+    <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Название</th>
+            <th>Жанр</th>
+            <th>Рейтинг</th>
+            <th>Статус</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>1</td><td>Во все тяжкие (Breaking Bad)</td><td>Криминал</td><td>8.0</td><td>Завершён</td></tr>
+        <tr><td>2</td><td>Очень странные дела (Stranger Things)</td><td>Фантастика</td><td>8.1</td><td>Идёт</td></tr>
+        <tr><td>3</td><td>Игра престолов (Game of Thrones)</td><td>Фэнтези</td><td>8.2</td><td>Завершён</td></tr>
+        <tr><td>4</td><td>Корона (The Crown)</td><td>Драма</td><td>8.3</td><td>Завершён</td></tr>
+        <tr><td>5</td><td>Тьма (Dark)</td><td>Научная фантастика</td><td>8.4</td><td>Завершён</td></tr>
+        <tr><td>6</td><td>Шерлок (Sherlock)</td><td>Детектив</td><td>8.0</td><td>Завершён</td></tr>
+        <tr><td>7</td><td>Настоящий детектив (True Detective)</td><td>Детектив</td><td>8.3</td><td>Идёт</td></tr>
+        <tr><td>8</td><td>Мандалорец (The Mandalorian)</td><td>Фантастика</td><td>8.1</td><td>Идёт</td></tr>
+        <tr><td>9</td><td>Ведьмак (The Witcher)</td><td>Фэнтези</td><td>7.7</td><td>Идёт</td></tr>
+        <tr><td>10</td><td>Офис (The Office)</td><td>Комедия</td><td>8.4</td><td>Завершён</td></tr>
+        <tr><td>11</td><td>Друзья (Friends)</td><td>Комедия</td><td>8.9</td><td>Завершён</td></tr>
+        <tr><td>12</td><td>Клиника (Scrubs)</td><td>Комедия</td><td>8.2</td><td>Завершён</td></tr>
+        <tr><td>13</td><td>Доктор Хаус (House M.D.)</td><td>Драма</td><td>8.7</td><td>Завершён</td></tr>
+        <tr><td>14</td><td>Сверхъестественное (Supernatural)</td><td>Фэнтези</td><td>8.0</td><td>Завершён</td></tr>
+        <tr><td>15</td><td>Пацаны (The Boys)</td><td>Фантастика</td><td>8.6</td><td>Идёт</td></tr>
+        <tr><td>16</td><td>Локи (Loki)</td><td>Фантастика</td><td>7.9</td><td>Идёт</td></tr>
+        <tr><td>17</td><td>Ходячие мертвецы (The Walking Dead)</td><td>Драма</td><td>8.0</td><td>Завершён</td></tr>
+        <tr><td>18</td><td>Воображаемая патруль (Doom Patrol)</td><td>Фантастика</td><td>7.8</td><td>Идёт</td></tr>
+        <tr><td>19</td><td>Сопрано (The Sopranos)</td><td>Криминал</td><td>9.0</td><td>Завершён</td></tr>
+        <tr><td>20</td><td>Белый лотос (The White Lotus)</td><td>Драма</td><td>7.6</td><td>Идёт</td></tr>
+        <tr><td>21</td><td>Фарго (Fargo)</td><td>Детектив</td><td>8.4</td><td>Идёт</td></tr>
+        <tr><td>22</td><td>Пикник у висячей скалы (Picnic at Hanging Rock)</td><td>Драма</td><td>7.0</td><td>Завершён</td></tr>
+        <tr><td>23</td><td>Пенниуорт (Pennyworth)</td><td>Криминал</td><td>7.5</td><td>Завершён</td></tr>
+        <tr><td>24</td><td>Бумажный дом (Money Heist)</td><td>Криминал</td><td>8.2</td><td>Завершён</td></tr>
+        <tr><td>25</td><td>Эйфория (Euphoria)</td><td>Драма</td><td>8.4</td><td>Идёт</td></tr>
+        <tr><td>26</td><td>Озарк (Ozark)</td><td>Криминал</td><td>8.5</td><td>Завершён</td></tr>
+        <tr><td>27</td><td>Барри (Barry)</td><td>Комедия</td><td>8.3</td><td>Завершён</td></tr>
+        <tr><td>28</td><td>Мир Дикого Запада (Westworld)</td><td>Фантастика</td><td>8.0</td><td>Завершён</td></tr>
+        <tr><td>29</td><td>Однажды в сказке (Once Upon a Time)</td><td>Фэнтези</td><td>7.8</td><td>Завершён</td></tr>
+        <tr><td>30</td><td>Карточный домик (House of Cards)</td><td>Драма</td><td>8.7</td><td>Завершён</td></tr>
+        <tr><td>31</td><td>Благие знамения (Good Omens)</td><td>Фэнтези</td><td>8.0</td><td>Идёт</td></tr>
+        <tr><td>32</td><td>Американская история ужасов (AHS)</td><td>Фэнтези</td><td>8.1</td><td>Идёт</td></tr>
+        <tr><td>33</td><td>Мост (Bron/Broen)</td><td>Детектив</td><td>8.6</td><td>Завершён</td></tr>
+        <tr><td>34</td><td>Утреннее шоу (The Morning Show)</td><td>Драма</td><td>8.2</td><td>Идёт</td></tr>
+        <tr><td>35</td><td>Остаться в живых (Lost)</td><td>Фантастика</td><td>8.3</td><td>Завершён</td></tr>
+        <tr><td>36</td><td>Люцифер (Lucifer)</td><td>Фэнтези</td><td>8.1</td><td>Завершён</td></tr>
+        <tr><td>37</td><td>Хранители (Watchmen)</td><td>Фантастика</td><td>8.1</td><td>Завершён</td></tr>
+        <tr><td>38</td><td>Благодать (Grace)</td><td>Детектив</td><td>7.6</td><td>Идёт</td></tr>
+        <tr><td>39</td><td>Полиция Чикаго (Chicago P.D.)</td><td>Криминал</td><td>7.9</td><td>Идёт</td></tr>
+        <tr><td>40</td><td>Касл (Castle)</td><td>Детектив</td><td>8.1</td><td>Завершён</td></tr>
+        <tr><td>41</td><td>Академия Амбрелла (Umbrella Academy)</td><td>Фантастика</td><td>8.0</td><td>Идёт</td></tr>
+        <tr><td>42</td><td>Видоизменённый углерод (Altered Carbon)</td><td>Фантастика</td><td>8.0</td><td>Завершён</td></tr>
+        <tr><td>43</td><td>Клиент всегда мёртв (Six Feet Under)</td><td>Драма</td><td>8.7</td><td>Завершён</td></tr>
+        <tr><td>44</td><td>Блэк Миррор (Black Mirror)</td><td>Фантастика</td><td>8.8</td><td>Идёт</td></tr>
+        <tr><td>45</td><td>Пик Блайндерс (Peaky Blinders)</td><td>Криминал</td><td>8.8</td><td>Завершён</td></tr>
+        <tr><td>46</td><td>Викинги (Vikings)</td><td>Фэнтези</td><td>8.5</td><td>Завершён</td></tr>
+        <tr><td>47</td><td>Уэнсдей (Wednesday)</td><td>Комедия</td><td>8.2</td><td>Идёт</td></tr>
+        <tr><td>48</td><td>Кобра Кай (Cobra Kai)</td><td>Комедия</td><td>8.5</td><td>Идёт</td></tr>
+        <tr><td>49</td><td>Тед Лассо (Ted Lasso)</td><td>Комедия</td><td>8.8</td><td>Идёт</td></tr>
+        <tr><td>50</td><td>Наследники (Succession)</td><td>Драма</td><td>8.9</td><td>Завершён</td></tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+  <p>Группа: Б9123-02.03.03тп · Разработчик: Боровой Димитрий</p>
+</footer>
+
+</body>
+</html>
