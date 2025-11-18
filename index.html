@@ -1,37 +1,134 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сериалы</title>
+    <title>Serials</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<header>
+    <div class="top-menu">
+        <div class="name">
+            Лого\слоган
+        </div>
+        <div class="search">
+            <div class="search-bar">
+                <input type="text"placeholder="Поиск по сайту">
+            </div>
+            <div class="search-button">
+                Найти
+            </div>
+        </div>
+    </div>
+    <div class="button-menu">
+        <a class="active-button" href="index.html">
+            Главная
+        </a>
+        <a class="inactive-button" href="the-crown.html">
+            The Crown
+        </a>
+        <a class="inactive-button" href="dark.html">
+            Dark
+        </a>
+        <a class="inactive-button" href="sherlock.html">
+            Sherlock
+        </a>
+    </div>
+    
+    </div>
+</header>
 
 <body>
-    <ul type="none">
-        <li> <a href="index.html">Главная</a></li>
-        <li><a href="data.html">Список сериалов</a></li>
-    </ul>
-    <hr>
-    <a href="breaking-bad.html"><img width=19% src="assets/breaking-bad.jpg"></a>
-    <a href="stranger-things.html"><img width=19% src="assets/stranger-things.jpg"></a>
-    <a href="game-of-thrones.html"><img width=19% src="assets/game-of-thrones.jpg"></a>
-    <a href="the-crown.html"> <img width=19% src="assets/the-crown.jpg"></a>
-    <a href="dark.html"><img width=19% src="assets/darj.jpg"></a>
-    <hr>
-    <img width="19%" src="assets/sherlock.jpg" align="middle">Шерлок <br>
-    <p>Современная интерпретация Шерлока Холмса и доктора Ватсона в Лондоне.</p>
+    <div class="container">
+        <div class="column">
+            <div class="block-long"><img src="src/breaking-bad.jpg"></div>
+            <div class="block-long"><img src="src/darj.jpg"></div>
+        </div><div class="column">
+            <div class="block"><img src="src/friends.png"></div>
+            <div class="block-long"><img src="src/game-of-thrones.jpg" ></div>
+        </div><div class="column">
+            <div class="block-long"><img src="src/sherlock.jpg" ></div>
+            <div class="block-long"><img src="src/stranger-things.jpg" ></div>
+        </div>
+    </div>
 
-    <img src="assets/friends.png" width="19%" align="middle">Friends
-    <p>
-        «Друзья́» (англ. Friends) — американский ситком, повествующий о жизни шестерых друзей. <br>
-        Признан одним из лучших комедийных сериалов в истории американского телевидения и стал одним из наиболее знаменитых проектов 1990-х годов. <br>
-        Сама постановка и творческая группа получили множество наград, в том числе шесть премий «Эмми» и премию «Золотой глобус».
-    </p>
-</body>
+<div class="main-container">
+
+    <div class="left-section">
+
+        <div class="card-row">
+            <div class="card">
+                <div class="circle"><img src="src/ted-lasso.png" alt="Рис."></div>
+                <div class="card-title">Тед Лассо</div>
+                <div class="card-text">Сериал про тренера сборной колледжа</div>
+                <button class="btn">Подробнее»</button>
+            </div><div class="card">
+                <div class="circle"><img src="src/soprano.png" alt="Рис."></div>
+                <div class="card-title">Сопранно</div>
+                <div class="card-text">Гангстер идет на терапию, чтобы разобраться в себе. </div>
+                <button class="btn">Подробнее»</button>
+            </div><div class="card">
+                <div class="circle"><img src="src/sheldon.png" alt="Рис."></div>
+                <div class="card-title">Детство Шелдона</div>
+                <div class="card-text">Юный вундеркинд поступает в среднюю школу.</div>
+                <button class="btn">Подробнее»</button>
+            </div><div class="card">
+                <div class="circle"><img src="src/chernobyl.png" alt="Рис."></div>
+                <div class="card-title">Чернобыль</div>
+                <div class="card-text">Страшная авария глазами ученых, политиков и спасателей.</div>
+                <button class="btn">Подробнее»</button>
+            </div><div class="card">
+                <div class="circle"><img src="src/bcs.png" alt="Рис."></div>
+                <div class="card-title">Лучше звоните Солу</div>
+                <div class="card-text">История об испытаниях и невзгодах, которые приходится преодолеть Солу Гудману</div>
+                <button class="btn">Подробнее»</button>
+            </div>
+        </div>
+
+        <div class="center-title">Заголовок</div>
+
+<div class="text-image-row">
+    <div class="text-col">
+        <p>Я — Декстер. Декстер Морган. Я работаю судмедэкспертом в полиции Майами. Я не понимаю любви, мне безразличен секс, и у меня нет чувств. А еще я серийный убийца.
+
+Мой отец был полицейским и прекрасно обучил меня прятать улики. Обычным гражданам не стоит меня бояться, я убиваю только преступников, подонков, до которых почему-либо не смогла или не захотела добраться полиция. Я убиваю их, аккуратно распиливаю на части и избавляюсь от трупов. Убийство для меня — творческий акт, искусство.</p>
+    </div><div class="big-image">
+        <img src="src/dexterr.png" alt="Большой рисунок">
+    </div><div class="text-col">
+        <p>Но однажды… В Майами появляется некто, равный мне. Даже превзошедший меня. Сумевший меня заинтересовать. Предложивший мне своего рода товарищеское состязание. Кто этот загадочный и неуловимый «икс»?..</p>
+    </div>
+</div>
+
+    </div><div class="divider">
+    </div><div class="right-section">
+
+        <div class="panel-item">
+            <div class="panel-text">
+                <h3>Теория большого взрыва</h3>
+                <p>Два блестящих физика Леонард и Шелдон — великие умы, которые понимают, как устроена вселенная. Но их гениальность ничуть не помогает им общаться с людьми, особенно с женщинами. Всё начинает меняться, когда напротив них поселяется красавица Пенни.</p>
+                <a href="#" class="more-link">Подробнее»</a>
+            </div><div class="panel-image">
+                <img src="src/bbt.png" alt="Рис.">
+            </div>
+        </div>
+
+        <div class="panel-item">
+            <div class="panel-text">
+                <h3>Доктор Хаус</h3>
+                <p>Сериал рассказывает о команде врачей, которые должны правильно поставить диагноз пациенту и спасти его. </p>
+                <a href="#" class="more-link">Подробнее»</a>
+            </div><div class="panel-image">
+                <img src="src/dhouse.png" alt="Рис.">
+            </div>
+        </div>
+
+    </div>
+
+</div>
 <footer>
-    Боровой Димитрий Максимович <br>
-    Б9123-02.03.03тп(2)
-</footer>
+    <p>2025 год · Группа: Б9123-02.03.03тп · Разработчик: Боровой Димитрий</p>
+  </footer>
+</body>
 
 </html>
